@@ -1,7 +1,6 @@
 {
-  "name": "desafio_clase06",
+  "name": "desafio_clase_be_03_julian_matta_4",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +17,16 @@
   "dependencies": {
     "express": "^4.17.2"
   },
-  "engines":{
-    "node": "14.*" 
-  }
+  "engines": {
+    "node": "14.*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julianoxe234/Desafio_Clase_BE_04_Julian_Matta_4.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Julianoxe234/Desafio_Clase_BE_04_Julian_Matta_4/issues"
+  },
+  "homepage": "https://github.com/Julianoxe234/Desafio_Clase_BE_04_Julian_Matta_4#readme",
+  "description": ""
 }
