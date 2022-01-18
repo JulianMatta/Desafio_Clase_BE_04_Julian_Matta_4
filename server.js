@@ -13,7 +13,9 @@ const PORT = 8080;
 const contenedorProductos = new Contenedor("./productos.txt");
 
 
-server.get("/",(request,response)=>response.send("Desafio Clase 06"));
+server.get("/",(request,response)=> {
+    response.send("<h1 style='color: blue'>Bienvenidos al servidor express")
+});
 
 // PRODUCTOS
 server.get("/productos", (request,response) => {
