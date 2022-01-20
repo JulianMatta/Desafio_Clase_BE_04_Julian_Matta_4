@@ -21,7 +21,7 @@ server.get("/",(request,response)=> {
 server.get("/productos", (request,response) => {
     contenedorProductos.getAll()
       .then((listadoProductos) => response.send(listadoProductos))
-      .catch((error) => console.error(error.message));
+      .catch((error) => response.send(error.message));
   });
    
 
