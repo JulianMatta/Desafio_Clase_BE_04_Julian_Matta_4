@@ -1,5 +1,7 @@
 const Contenedor = require("./Modulos/Contenedor.js"); //clase contenedor que trae productos
 const express = require("express"); // libreria para crear servidor
+const { request } = require("http");
+const { response } = require("express");
 
 
 function getRandomInt(min, max) {
@@ -33,6 +35,15 @@ server.get("/productoRandom", (request,response) => {
         let nroRandom = getRandomInt(1, listadoProductos.length);
         //devuelvo el producto con el id = al numero obtenido al azar
         response.send(await contenedorProductos.getById(nroRandom));
+    })
+    .catch((error) => console.error(error.message));
+})
+
+//Busqueda ID
+server.get("/busquedaporID", (request, response) => {
+    contenedorProductos.getAll()
+    .then(async (listadoProductos) =>{
+        response.send(await contenedorProductos.getById(5));
     })
     .catch((error) => console.error(error.message));
 })
